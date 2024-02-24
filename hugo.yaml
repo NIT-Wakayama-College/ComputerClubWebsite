@@ -1,4 +1,112 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: https://nct-wakayama-college.github.io/
+languageCode: ja
+title: 和歌山高専 コンピュータ部
+# paginate: 5
 theme: ["PaperMod"]
+
+# enableRobotsTXT: true
+# buildDrafts: false
+# buildFuture: false
+# buildExpired: false
+
+# googleAnalytics: UA-123-45
+
+# minify:
+#   disableXML: true
+#   minifyOutput: true
+
+params:
+#   env: production # to enable google analytics, opengraph, twitter-cards and schema.
+#   title: ExampleSite
+#   description: "ExampleSite description"
+#   keywords: [Blog, Portfolio, PaperMod]
+#   author: ["KashiuchiSotaro"] # multiple authors
+#   images: ["<link or path of image for opengraph, twitter-cards>"]
+#   DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  homeInfoParams:
+    Title: Hi there wave
+    Content: Can be Info, links, about...
+
+  socialIcons: # optional
+    - name: "<platform>"
+      url: "<link>"
+    - name: "<platform 2>"
+      url: "<link2>"
+
+
+#   analytics:
+#     google:
+#       SiteVerificationTag: "XYZabc"
+#     bing:
+#       SiteVerificationTag: "XYZabc"
+#     yandex:
+#       SiteVerificationTag: "XYZabc"
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+menus:
+  main:
+    - identifier: about
+      name: 私達について
+      pageRef: /about
+      weight: 10
+    - identifier: news
+      name: お知らせ
+      pageRef: /tags/news
+      weight: 20
+    - identifier: posts
+      name: 投稿
+      pageRef: /posts
+      weight: 30
+    - identifier: tags
+      name: タグ
+      pageRef: /tags
+      weight: 40
+    - identifier: prodcuts
+      name: 作品紹介
+      pageRef: /prodcuts
+      weight: 50
+    - identifier: members
+      name: メンバー
+      pageRef: /members
+      weight: 60
+    - identifier: searchs
+      name: 検索
+      pageRef: /search
+      weight: 60
+
+
+# # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#   highlight:
+#     noClasses: false
+#     # anchorLineNos: true
+#     # codeFences: true
+#     # guessSyntax: true
+#     # lineNos: true
+#     # style: monokai
