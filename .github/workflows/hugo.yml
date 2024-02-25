@@ -46,6 +46,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+        if: github.repository == 'NCT-Wakayama-College/ComputerClubWebsite'
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
@@ -55,13 +56,23 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
+            --minify
+        if: github.repository != 'NCT-Wakayama-College/ComputerClubWebsite'
+      - name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+        if: github.repository == 'NCT-Wakayama-College/ComputerClubWebsite'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-    # if: github.repository == 'NCT-Wakayama-College/ComputerClubWebsite'
+        if: github.repository == 'NCT-Wakayama-College/ComputerClubWebsite'
 
   # Deployment job
   deploy:
