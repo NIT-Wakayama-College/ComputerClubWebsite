@@ -47,9 +47,9 @@ params:
     Content: Can be Info, links, about...
 
   socialIcons: # optional
-    - name: "<platform>"
+    - name: "youtube"
       url: "<link>"
-    - name: "<platform 2>"
+    - name: "x"
       url: "<link2>"
 
 
@@ -86,10 +86,10 @@ menus:
       name: タグ
       pageRef: /tags
       weight: 40
-    - identifier: prodcuts
-      name: 作品紹介
-      pageRef: /prodcuts
-      weight: 50
+    # - identifier: prodcuts
+    #   name: 作品紹介
+    #   pageRef: /tags/prodcuts
+    #   weight: 50
     - identifier: members
       name: メンバー
       pageRef: /members

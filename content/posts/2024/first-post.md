@@ -3,6 +3,7 @@ title = 'First Post'
 date = 2024-02-24T20:33:32+09:00
 description = '和歌山工業高等専門学校(和歌山高専)のコンピュータ部のWebサイトを作成しました。初めての投稿です！'
 tags = ['news', 'web']
+author = ['KashiuchiSotaro']
 +++
 
 ## Hello World
