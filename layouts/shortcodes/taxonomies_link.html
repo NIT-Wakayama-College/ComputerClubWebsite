@@ -1,4 +1,4 @@
 <!-- 第一引数:タクソノミー 第二引数:タクソノミーの用語 -->
 <ul class="post-tags" style="display: inline;">
-    <li><a href="/{{ .Get 0 }}/{{ .Get 1 }}" style="box-shadow: 0px 0px;">{{ .Get 1 }}</a></li>
+    <li><a href="{{ .Site.BaseURL }}{{ .Get 0 }}/{{ .Get 1 }}" style="box-shadow: 0px 0px;">{{ .Get 1 }}</a></li>
 </ul>
