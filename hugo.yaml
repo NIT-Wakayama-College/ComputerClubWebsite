@@ -70,32 +70,28 @@ outputs:
 
 menus:
   main:
-    - identifier: about
-      name: 私達について
+    - name: 私達について
       pageRef: /about
       weight: 10
-    - identifier: news
-      name: お知らせ
-      pageRef: /tags/news
+    - name: お知らせ
+      pageRef: /categories/news
       weight: 20
-    - identifier: posts
-      name: 投稿
-      pageRef: /posts
+    - name: ブログ
+      pageRef: /categories/blog
       weight: 30
-    - identifier: tags
-      name: タグ
-      pageRef: /tags
+    - name: 投稿
+      pageRef: /posts
       weight: 40
-    # - identifier: prodcuts
-    #   name: 作品紹介
+    - name: タグ
+      pageRef: /tags
+      weight: 50
+    # - name: 作品紹介
     #   pageRef: /tags/prodcuts
     #   weight: 50
-    - identifier: members
-      name: メンバー
+    - name: メンバー
       pageRef: /members
       weight: 60
-    - identifier: searchs
-      name: 検索
+    - name: 検索
       pageRef: /search
       weight: 60
 
