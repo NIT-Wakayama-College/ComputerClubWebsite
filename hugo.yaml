@@ -91,10 +91,17 @@ menus:
     - name: メンバー
       pageRef: /members
       weight: 60
+    - name: メンバータグ
+      pageRef: /members-tags
+      weight: 60
     - name: 検索
       pageRef: /search
       weight: 60
 
+taxonomies:
+  category: categories
+  member-tag: members-tags
+  tag: tags
 
 # # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
