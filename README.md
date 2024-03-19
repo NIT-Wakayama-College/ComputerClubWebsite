@@ -37,21 +37,21 @@ ComputerClubWebsiteDevelopという開発用のリポジトリに記述した記
       ![push](./_attachments/push.png)
 4. PullRequestを作成する
    - この時、レビュアーに少なくとも一人は管理者権限を持っている人を割り当てること
-   - ![PR](./_attachments/PR.png)
+      ![PR](./_attachments/PR.png)
 5. レビュアーに修正を求められたら修正する。それ以降は管理者権限を持っている人がWebサイトに反映してくれるので、気長に待つ
 
 ## ステップ2
 1. PullRequestのレビューを行う
-   - ![review](./_attachments/review.png)
-1. mainに「**quash merge**」する(図の4)
-   - ![merge](./_attachments/merge.png)
-2. ComputerClubWebsiteのリポジトリをリモートリポジトリとして登録する
+      ![review](./_attachments/review.png)
+2. mainに「**quash merge**」する(図の4)
+      ![merge](./_attachments/merge.png)
+1. ComputerClubWebsiteのリポジトリをリモートリポジトリとして登録する
    - `git remote add public https://github.com/NCT-Wakayama-College/ComputerClubWebsite.git`
-3. ComputerClubWebsiteDevelopのmainブランチをプルする(図の5)
+2. ComputerClubWebsiteDevelopのmainブランチをプルする(図の5)
    - `git pull origin main`
-4. ComputerClubWebsiteのmainブランチにプッシュする(図の6)
+3. ComputerClubWebsiteのmainブランチにプッシュする(図の6)
    - `git push public main`
-5. デプロイまで正しくできていることをGitHubで確認する
+4. デプロイまで正しくできていることをGitHubで確認する
 
 # プロフィールを投稿
-プロフィールを投稿する場合は、上記の[記事を投稿->一般権限の場合](#一般権限の場合)の手順2以外は同じです。手順2の``hugo new content posts/2024/XXX/index.md`の部分を`hugo new content members/2022B-NAME.md`に読み替えてください。
+プロフィールを投稿する場合は、上記の[記事を投稿->一般権限の場合](#一般権限の場合)の手順2以外は同じです。手順2の`hugo new content posts/2024/XXX/index.md`の部分を`hugo new content members/2022B-NAME.md`に読み替えてください。
