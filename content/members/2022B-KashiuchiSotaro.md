@@ -3,7 +3,7 @@ title = '樫内蒼太朗'
 date = 2024-02-26T12:09:08+09:00
 categories = 'member'
 members-tags = ['2022年入学', '電気情報工学科', '第2回ゆめくじら', '第3回ゆめくじら', '第4回ゆめくじら', '部門']
-tags = ['os']
+tags = ['os', 'web']
 author = ['2022B-KashiuchiSotaro']
 +++
 
@@ -12,8 +12,8 @@ author = ['2022B-KashiuchiSotaro']
 - ニックネーム:そうちゃん、かっしー
 - 所属学科:{{< taxonomies_link "members-tags" "電気情報工学科" >}}
 - 入学年度:{{< taxonomies_link "members-tags" "2022年入学" >}}
-- 役職:{{< taxonomies_link "members-tags" "第2回ゆめくじら" >}}, {{< taxonomies_link "members-tags" "第3回ゆめくじら" >}}, {{< taxonomies_link "members-tags" "第4回ゆめくじら" >}}
-- keyword:{{< taxonomies_link "tags" "os" >}}
+- 役職/所属:{{< taxonomies_link "members-tags" "第2回ゆめくじら" >}}, {{< taxonomies_link "members-tags" "第3回ゆめくじら" >}}, {{< taxonomies_link "members-tags" "第4回ゆめくじら" >}}
+- keyword:{{< taxonomies_link "tags" "os" >}}, {{< taxonomies_link "tags" "web" >}}
 
 ## 活動内容
 
