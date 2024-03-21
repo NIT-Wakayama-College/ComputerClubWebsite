@@ -73,30 +73,46 @@ menus:
     - name: 私達について
       pageRef: /about
       weight: 10
-    - name: お知らせ
-      pageRef: /categories/news
-      weight: 20
-    - name: ブログ
-      pageRef: /categories/blog
-      weight: 30
+
     - name: 投稿
       pageRef: /posts
-      weight: 40
-    - name: タグ
+      weight: 20
+    - name: 最近の投稿
+      pageRef: /posts
+      weight: 21
+      parent: 投稿
+    - name: お知らせ
+      pageRef: /categories/news
+      weight: 22
+      parent: 投稿
+    - name: ブログ
+      pageRef: /categories/blog
+      weight: 23
+      parent: 投稿
+    - name: タグ検索
       pageRef: /tags
-      weight: 50
-    # - name: 作品紹介
-    #   pageRef: /tags/prodcuts
-    #   weight: 50
+      weight: 24
+      parent: 投稿
+
     - name: メンバー
       pageRef: /members
-      weight: 60
-    - name: メンバータグ
+      weight: 30
+    - name: メンバー 一覧
+      pageRef: /members
+      weight: 31
+      parent: メンバー
+    - name: メンバー タグ
       pageRef: /members-tags
-      weight: 60
+      weight: 32
+      parent: メンバー
+
     - name: 検索
       pageRef: /search
       weight: 60
+
+    # - name: 作品紹介
+    #   pageRef: /tags/prodcuts
+    #   weight: 50
 
 taxonomies:
   category: categories
