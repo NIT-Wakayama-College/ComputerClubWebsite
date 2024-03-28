@@ -53,13 +53,8 @@ params:
       url: "<link2>"
 
 
-#   analytics:
-#     google:
-#       SiteVerificationTag: "XYZabc"
-#     bing:
-#       SiteVerificationTag: "XYZabc"
-#     yandex:
-#       SiteVerificationTag: "XYZabc"
+  analytics:
+    GoogleTagManagerID: "GTM-NCTW2QFD"
 
 
 outputs:
