@@ -1,0 +1,38 @@
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+
+{{ if and (.Params.categories) }}
+{{ $c := .Params.categories }}
+{{ $cposts := index .Site.Taxonomies.categories (lower $c) }}
+{{- range $cposts -}}
+{{ if eq . $ }}
+{{ $.Scratch.Set "found" true }}
+{{ else }}
+{{ if $.Scratch.Get "found" }}
+{{ if not ($.Scratch.Get "next") }}
+{{/* Set "next" entry as just after the current page. */}}
+{{ $.Scratch.Set "next" . }}
+{{ end }}
+{{ else }}
+{{/* Update "prev" entry until the current page is found. */}}
+{{ $.Scratch.Set "prev" . }}
+{{ end }}
+{{- end -}}
+{{ end }}
+
+<nav class="paginav">
+  {{- with ($.Scratch.Get "prev") -}}
+  <a class="prev" href="{{ .Permalink }}">
+    <span class="title">« {{ i18n "prev_page" }}</span>
+    <br>
+    <span>{{- .Name -}}</span>
+  </a>
+  {{- end -}}
+  {{- with ($.Scratch.Get "next") -}}
+  <a class="next" href="{{ .Permalink }}">
+    <span class="title">« {{ i18n "next_page" }}</span>
+    <br>
+    <span>{{- .Name -}}</span>
+  </a>
+  {{- end -}}
+</nav>
+{{ end }}
