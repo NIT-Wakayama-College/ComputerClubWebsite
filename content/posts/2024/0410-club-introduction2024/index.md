@@ -16,10 +16,7 @@ author = ['ItoRyosei']
 !['ramina'](ramina.png)
 
 ## 紹介動画
-クリックするとyoutubeが開きます
-[!['altテキスト'](a.png)](https://youtu.be/zy_UsDCFn1w)
-
-
+{{< youtube zy_UsDCFn1w >}}  
 
 クラブ紹介後に行われた部活では、体験期間前にも関わらず何人かの新入生がクラブ見学に来てくれました。
 
