@@ -90,6 +90,10 @@ menus:
       pageRef: /tags
       weight: 24
       parent: 投稿
+    - name: お問い合わせ
+      pageRef: /contact
+      weight: 25
+      parent: 投稿
 
     - name: メンバー
       pageRef: /members
