@@ -1,7 +1,7 @@
 baseURL: https://nct-wakayama-college.github.io/ComputerClubWebsite/
 languageCode: ja
 title: 和歌山高専 コンピュータ部
-# paginate: 5
+# paginate: 12
 theme: ["PaperMod", "hugo-embed-pdf-shortcode"]
 
 # enableRobotsTXT: true
@@ -41,18 +41,22 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
-
   enableInlineShortcodes: true
 
+  # homepage(toppage)
+  mainSections: "posts"  
   homeInfoParams:
-    Title: Hi there wave
-    Content: Can be Info, links, about...
-
+    Title: コンピュータ部へ ようこそ
+    Content: "
+      私達コンピュータ部は、和歌山工業高等専門学校(National College of Technology, Wakayama College)の情報系のクラブです。
+      2024年度から本校の「ゆめくじら」というサークルと合併し、新体制で運営しています。動画、ゲーム、モデリング、イラスト、Webサイト、プログラミング等情報機器を使った幅広いものづくりをしています。
+      このWebサイトでは日頃のコンピュータ部の活動を発信しています！
+    "
   socialIcons: # optional
     - name: "youtube"
-      url: "<link>"
-    - name: "x"
-      url: "<link2>"
+      url: "https://www.youtube.com/@ComputerClubNITWC/featured"
+  #   - name: "x"
+  #     url: "<link2>"
 
 
   analytics:
