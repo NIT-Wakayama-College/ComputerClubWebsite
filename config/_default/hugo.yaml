@@ -59,10 +59,6 @@ params:
   #     url: "<link2>"
 
 
-  analytics:
-    GoogleTagManagerID: "GTM-NCTW2QFD"
-
-
 outputs:
   home:
     - HTML
