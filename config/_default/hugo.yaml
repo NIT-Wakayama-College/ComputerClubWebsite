@@ -59,10 +59,6 @@ params:
       url: "https://github.com/NIT-Wakayama-College"
 
 
-  analytics:
-    GoogleTagManagerID: "GTM-NCTW2QFD"
-
-
 outputs:
   home:
     - HTML
