@@ -54,9 +54,9 @@ params:
     "
   socialIcons: # optional
     - name: "youtube"
-      url: "https://www.youtube.com/@ComputerClubNITWC/featured"
-  #   - name: "x"
-  #     url: "<link2>"
+      url: "https://www.youtube.com/channel/UCpvPhDH-vLOFPqLt5M4B1Dg"
+    - name: "github"
+      url: "https://github.com/NIT-Wakayama-College"
 
 
   analytics:
