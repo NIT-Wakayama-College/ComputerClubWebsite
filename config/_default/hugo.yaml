@@ -91,18 +91,6 @@ menus:
       weight: 24
       parent: 投稿
 
-    - name: メンバー
-      pageRef: /members
-      weight: 30
-    - name: メンバー 一覧
-      pageRef: /members
-      weight: 31
-      parent: メンバー
-    - name: メンバー タグ
-      pageRef: /members-tags
-      weight: 32
-      parent: メンバー
-
     - name: 検索
       pageRef: /search
       weight: 60
