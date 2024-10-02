@@ -1,4 +1,6 @@
-# コンピュータ部とは
++++
+title = 'コンピュータ部とは'
++++
 私達コンピュータ部は、和歌山工業高等専門学校(National College of Technology, Wakayama College)の情報系のクラブです。2024年度から本校の「ゆめくじら」というサークルと合併し、新体制で運営しています。
 
 {{< youtube TKYwbF5G6to >}}  
